@@ -23,12 +23,13 @@
 
 Do the [exercise one](#exercise-one) than:
 
-1. Create a dockerfile that:
+1. Create your github account (or use another free repository hosting service) if you don't already have one
+2. On your repository hosting service create a new repo called `sighup-challange`
+3. In this repository create a `welcomepage.html`
+4. Create a dockerfile that:
    - use ubuntu 18.04 image as base image
-   - install nginx
-   - clone your github repository `sighup-challenge2` that contains an html `welcomepage.html`
+   - install nginx (or apache if you prefer)
+   - clone your repository `sighup-challenge` that contains the html `welcomepage.html`
    - use this `welcomepage.html` as default welcome page for nginx
-
-2. Create a new ansible playbook that (use the `deploy` user to apply the playbook) deploy the container with the dockerfile created in the previous point
-
-3. Ensure from your laptop browser you are able to see the welcome page from your docker container in the Vagrant machine
+5. Create a new ansible playbook that (use the `deploy` user to apply the playbook) deploy the container with the dockerfile created in the previous point
+6. Ensure from your laptop browser you are able to see the welcome page from your docker container in the Vagrant machine
